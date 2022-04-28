@@ -1,0 +1,31 @@
+package com.revature.models;
+
+public class Cars {
+	
+	public String type;
+	public int year;
+	public String color;
+	public int mileage;
+	
+	public void drive() {
+		System.out.println("Vroom vroom, I like to zoom");
+	}
+
+	public Cars(String type, int year, String color, int mileage) {
+		super();
+		this.type = type;
+		this.year = year;
+		this.color = color;
+		this.mileage = mileage;
+	}
+
+	public Cars() {
+		super();
+		// TODO Auto-generated constructor stub
+	}	
+	
+	
+	
+	
+	
+}

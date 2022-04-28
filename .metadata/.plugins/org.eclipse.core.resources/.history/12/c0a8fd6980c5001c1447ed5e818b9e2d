@@ -1,0 +1,11 @@
+package com.revature;
+
+public class Launcher {
+
+	public static void main(String[] args) {
+		int potato = 1;
+		int baked = 2;
+		System.out.println(potato + baked);
+	}
+	
+}

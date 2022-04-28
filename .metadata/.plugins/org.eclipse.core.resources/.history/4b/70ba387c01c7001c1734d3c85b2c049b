@@ -1,0 +1,31 @@
+package com.revature;
+
+public class Launcher {
+	
+	public static void main(String[] args) {
+		//Nesting is full putting "stuff" inside of other stuff of the same kind
+		boolean potato = false;
+		// A singluar = sign, is how you set the value of a variable, if you want to compare two things, you double ==
+		int bananas = 5;
+		
+		// If statements, run the FIRST ONE ONLY
+		if (potato == true) {
+			System.out.println("Thats great!");
+		}
+		// This ONLY runs when an if statement fails
+		else if (bananas == 5) {
+			System.out.println("This is also great!");
+		}
+		//else happens when everything ELSE fails
+		else {
+			System.out.println("Well that sucks!");
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+}

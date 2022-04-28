@@ -1,0 +1,13 @@
+package com.revature.models;
+
+public class TerinCar extends Cars {
+	public String type = "None";
+	public int year = 2015;
+	public String color = "Gray";
+	public int mileage = 78000;
+	
+	public void drive() {
+		System.out.println("We dun diddly crashed it");
+	}
+
+}
