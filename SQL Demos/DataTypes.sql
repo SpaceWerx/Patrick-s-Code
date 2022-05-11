@@ -35,13 +35,17 @@ CREATE TABLE datatypes (
 	big_number int8, --8 bytes, for BIG numbers
 	standard_decimal decimal(10, 2), --2 parameters: (total digits, decimal places)
 	--so this decimal has 10 total digits, with 2 decimal places. 
-	
 	"boolean" boolean, --double quotes let you use keywords as column names, etc.
-	
 	fixed_length_text char(2), --will be 2 characters, not best practice unless you NEED a text field of a certain length  
 	variable_length_text varchar(15), --can be from 0-15 characters, better practice than char
-	unlimited_length_text TEXT, --unlimited length, best practice if you don't need to limit the amount of characters
-	
+	unlimited_length_text TEXT, --unlimited length, best practice if you don't need to limit the amount of CHARACTERS
 	"date" date, --YYYY-MM-DD
 	"timestamp" timestamp --YYYY-MM-DD HH-MM-SS 
 );
+--Don't put "white space" in your SQL statements
+
+
+
+
+
+DROP TABLE datatypes; 
