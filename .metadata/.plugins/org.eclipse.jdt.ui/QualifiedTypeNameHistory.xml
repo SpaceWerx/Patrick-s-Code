@@ -2,4 +2,12 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.revature.models.Shows"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.revature.repositories.RoleDAO"/>
+    <fullyQualifiedTypeName name="com.revature.models.Menu"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.revature.utilities.ConnectionFactory"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 </qualifiedTypeNameHistroy>
