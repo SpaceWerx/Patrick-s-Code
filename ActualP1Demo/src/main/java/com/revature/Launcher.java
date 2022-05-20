@@ -3,6 +3,7 @@ package com.revature;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import com.revature.controllers.AuthenticationController;
 import com.revature.controllers.EmployeeController;
 import com.revature.utilities.ConnectionFactory;
 
@@ -11,7 +12,7 @@ import io.javalin.Javalin;
 public class Launcher {
 	public static void main(String[] args) throws SQLException {
 		EmployeeController ec = new EmployeeController();
-		
+		AuthenticationController ac = new AuthenticationController();
 		//Testing Database Connectivity - just testing whether our Connection (from ConnectionFactory) is successful
 		try(Connection conn = ConnectionFactory.getConnection()){
 			System.out.println("Connection Successful :)");
@@ -39,7 +40,7 @@ public class Launcher {
 		app.post("/employee", ec.insertEmployeesHandler);
 		
 		//In the future, we will also add a log in function
-		//app.post("/login", null);
+		app.post("/login", ac.loginHandler);
 		
 	}
 }
