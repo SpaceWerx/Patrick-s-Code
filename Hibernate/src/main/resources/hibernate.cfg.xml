@@ -22,6 +22,7 @@
         <!-- DDL -->
         <property name="hibernate.hbm2ddl.auto">create</property>
         <!-- Anyone remember what setting our hbm2ddl.auto to create will do? -->
+        <!-- Remember to change this to update-->
 		<!-- It will wipe all tables and data, and recreate it -->
 
         <!-- We HAVE TO map our classes here in order for them to get picked up by Hibernate-->

@@ -21,7 +21,7 @@ public class Director {
 	private String f_name;
 	@Column(nullable = false)   //I am showing that @Column is optional
 	private String l_name;
-	private String studio_name;
+	private int year_born;
 
 	//Boilerplate Code here......................
 	//no args constructor
@@ -30,22 +30,23 @@ public class Director {
 		// TODO Auto-generated constructor stub
 	}
 	//all args constructor
-	public Director(int id, String f_name, String l_name, String studio_name) {
+	
+	
+	public int getId() {
+		return id;
+	}
+	public Director(String f_name, String l_name, int year_born) {
+		super();
+		this.f_name = f_name;
+		this.l_name = l_name;
+		this.year_born = year_born;
+	}
+	public Director(int id, String f_name, String l_name, int year_born) {
 		super();
 		this.id = id;
 		this.f_name = f_name;
 		this.l_name = l_name;
-		this.studio_name = studio_name;
-	}
-	//left out the ID field so that we can insert values
-	public Director(String f_name, String l_name, String studio_name) {
-		super();
-		this.f_name = f_name;
-		this.l_name = l_name;
-		this.studio_name = studio_name;
-	}
-	public int getId() {
-		return id;
+		this.year_born = year_born;
 	}
 	public void setId(int id) {
 		this.id = id;
@@ -62,16 +63,20 @@ public class Director {
 	public void setL_name(String l_name) {
 		this.l_name = l_name;
 	}
-	public String getStudio_name() {
-		return studio_name;
+	
+	public int getYear_born() {
+		return year_born;
 	}
-	public void setStudio_name(String studio_name) {
-		this.studio_name = studio_name;
+
+
+	public void setYear_born(int year_born) {
+		this.year_born = year_born;
 	}
+
+
 	@Override
 	public String toString() {
-		return "Director [id=" + id + ", f_name=" + f_name + ", l_name=" + l_name + ", studio_name=" + studio_name
-				+ "]";
+		return "Director [id=" + id + ", f_name=" + f_name + ", l_name=" + l_name + ", year_born=" + year_born + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -80,7 +85,7 @@ public class Director {
 		result = prime * result + ((f_name == null) ? 0 : f_name.hashCode());
 		result = prime * result + id;
 		result = prime * result + ((l_name == null) ? 0 : l_name.hashCode());
-		result = prime * result + ((studio_name == null) ? 0 : studio_name.hashCode());
+		result = prime * result + year_born;
 		return result;
 	}
 	@Override
@@ -104,10 +109,7 @@ public class Director {
 				return false;
 		} else if (!l_name.equals(other.l_name))
 			return false;
-		if (studio_name == null) {
-			if (other.studio_name != null)
-				return false;
-		} else if (!studio_name.equals(other.studio_name))
+		if (year_born != other.year_born)
 			return false;
 		return true;
 	}
