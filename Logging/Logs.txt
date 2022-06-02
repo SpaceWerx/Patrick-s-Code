@@ -1,0 +1,17 @@
+2022-06-02 12:35:48 INFO  Launcher:25 - /user accessed login prompt/
+2022-06-02 12:36:14 INFO  Launcher:35 - /User successfully logged in/
+2022-06-02 12:36:30 INFO  Launcher:42 - /User's answer was: Yes/
+2022-06-02 12:36:46 INFO  Launcher:48 - /User's order is: Big Mac please/
+2022-06-02 12:37:14 INFO  Launcher:62 - /User wishes to do: World Domination today/
+2022-06-02 12:37:14 INFO  Launcher:66 - /I think the User has a few loose screws, if you know what I mean/
+2022-06-02 12:37:14 INFO  Launcher:25 - /user accessed login prompt/
+2022-06-02 12:38:22 INFO  Launcher:25 - /User accessed login prompt/
+2022-06-02 12:38:34 WARN  Launcher:84 - /User failed to log in/
+2022-06-02 12:38:49 INFO  Launcher:25 - /User accessed login prompt/
+2022-06-02 12:38:53 WARN  Launcher:84 - /User failed to log in/
+2022-06-02 12:38:59 INFO  Launcher:25 - /User accessed login prompt/
+2022-06-02 12:39:05 INFO  Launcher:35 - /User successfully logged in/
+2022-06-02 12:39:08 INFO  Launcher:42 - /User's answer was: No/
+2022-06-02 12:39:08 INFO  Launcher:52 - /This is infact Patrick/
+2022-06-02 12:39:18 INFO  Launcher:62 - /User wishes to do: Sleep today/
+2022-06-02 12:39:18 INFO  Launcher:70 - /User is clearly a procrastinator/
