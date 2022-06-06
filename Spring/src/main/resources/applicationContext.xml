@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The applicationContext.xml holds the configurations for how we register, create, and inject Spring Beans -->
+
+<bean xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+<!-- We need the <beans> tag and its configurations in order for this xml to be used for Spring -->
+
+
+	<!-- This is the only thing we need in our applicationContext.xml when using annotation-driven bean declaration -->
+  	<context:component-scan base-package="com.revature"></context:component-scan>
+  	<!-- With this one line, the applicationContext.xml knows to scan com.revature for annotations -->
+  
+
+	<!-- Below, we are declaring and wiring beans in XML (which we usually don't do - we like @Autowired) -->
+	
+	<!-- This is the wiring for our account Bean -->
+	<!-- <bean name="account" class="com.revature.models.Account"></bean>	-->
+	<!-- This will be our User bean-->
+	<!-- <bean name = "user" class="com.revature.models.User"></bean> -->
+
+	
+	<!-- The user class has an account as one of its fields, so we need to wire the account with the property tag-->
+	<!-- But STS was being weird and giving me a non-specific error, so we will just leave this here for reference and not worry about it <3-->
+	<!-- <property name="account" ref="account"></property>  -->
+	
+
+</bean>
